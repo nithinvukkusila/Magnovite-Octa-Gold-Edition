@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cultural | Events</title>
+  
+  
+<!-- font awsome -->
+<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic'>
+<!-- end -->
+
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+  
+
+      <link rel="stylesheet" href="css/c_style.css">
+
+      <style>
+         
+          
+   
+ html {
+      height: 100%;
+    }
+    body
+    {
+      background-color: #212121;
+      
+      justify-content: center;
+      align-items: center;
+     
+      margin: 0;
+      height: 100%;
+      overflow-y: scroll;
+      
+    }
+    .events {
+      position: absolute;
+      background-color: transparent;
+            display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: wrap;
+      margin: 0;
+      z-index: 1;
+      height: 100%;
+    }
+    figure.snip {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      font-family:  'Roboto Condensed', sans-serif;;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      margin: 10px;
+      min-width: 220px;
+      max-width: 310px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    figure.snip * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    
+    figure.snip:before,
+    figure.snip:after {
+      position: absolute;
+      width: 100%;
+      background: #000000;
+      height: 0px;
+      display: block;
+      content: '';
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    
+    figure.snip:before {
+      top: 0;
+    }
+    
+    figure.snip:after {
+      bottom: 0;
+    }
+    
+    figure.snip img {
+      max-width: 100%;
+      margin-bottom: -5px;
+    }
+    
+    figure.snip figcaption {
+      position: relative;
+      background:transparent;
+    }
+    
+    figure.snip h3,
+    figure.snip p {
+      margin: 0;
+      display: inline-block;
+      width: 100%;
+    }
+    
+    figure.snip h3 {
+      width: 70%;
+      padding: 12px 15px;
+      background: #333333;
+      text-transform: uppercase;   
+      transform: translateY(-50%) rotate(0deg) scale(1);
+    }
+    
+    figure.snip p {
+      font-size: 0.9em;
+      font-weight: 500;
+      background: transparent;
+      color: #f39c12;
+      padding: 10px 40px 40px;
+    }
+    
+    figure.snip a {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      color: #ffffff;
+    }
+    
+    figure.snip.blue h3,
+    figure.snip.blue:before,
+    figure.snip.blue:after {
+      background: #2980b9;
+    }
+    
+    figure.snip.red h3,
+    figure.snip.red:before,
+    figure.snip.red:after {
+      background: #c0392b;
+    }
+    
+    figure.snip.yellow h3,
+    figure.snip.yellow:before,
+    figure.snip.yellow:after {
+      background: #f39c12;
+    }
+     
+    
+    figure.snip:hover figcaption h3,
+    figure.snip.hover figcaption h3 {   
+      transform: translateY(-50%) rotate(-10deg) scale(0.71);
+    }
+    
+    figure.snip:hover:before,
+    figure.snip.hover:before,
+    figure.snip:hover:after,
+    figure.snip.hover:after {
+      height: 10px;
+    }
+    .mybtn
+    {
+      margin-bottom: 10px;
+      border: none;
+      padding:10px 15px;
+      font-size: 20px;
+      font-weight: 300;
+       background-color: #f39c12;
+    }
+    
+         
+         </style>
+
+</head>
+
+
+
+<body>
+
+  
+<!-- menu -->
+
+<nav class="top-right open">
+  <a class="disc l1" href="cultural.html">
+      <div>Cultural Events</div>
+  </a>
+  <a class="disc l2" href="non_tech.html">
+      <div>Non-tech Events</div>
+  </a>
+  <a class="disc l3" href="tech.html">
+      <div>Tech Events</div>
+  </a>
+  <a class="disc l4" href="index.html">
+      <div>Home</div>
+  </a>
+  <a class="disc l5 toggle">
+      Menu
+  </a>
+</nav>
+
+
+
+
+<!-- end -->
+
+
+
+  <div class="slider animated 1 swing delay-0.3s" id="slider1">
+    <!-- Slides -->
+    <div style="background-image:url(images/1.jpg)"></div>
+    <div style="background-image:url(images/2.jpg)"></div>
+    <div style="background-image:url(images/1.jpg)"></div>
+    <div style="background-image:url(images/2.jpg)"></div>
+    <div style="background-image:url(images/1.jpg)"></div>
+    <!-- The Arrows -->
+    <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
+    <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i>
+    <!-- Title Bar -->
+    <span class="titleBar">
+        <h1>Magnovite OCta GOld Edition - 2019 Tech Events</h1>
+    </span>
+</div>
+
+  <!-- social media links -->
+
+  <div class="float-sm">
+    <div class="fl-fl float-fb">
+      <i class="fa fa-3x fa-facebook"></i>
+      <a href="" target="_blank"> Like us!</a>
+    </div>
+    <div class="fl-fl float-tw">
+      <i class="fa fa-2x fa-twitter"></i>
+      <a href="" target="_blank">Follow us!</a>
+    </div>
+    <div class="fl-fl float-gp">
+      <i class="fa fa-2x fa-google-plus"></i>
+      <a href="" target="_blank">Recommend us!</a>
+    </div>
+    <div class="fl-fl float-rs">
+      <i class="fa fa-youtube"></i>
+      <a href="" target="_blank">Follow via RSS</a>
+    </div>
+    <div class="fl-fl float-ig">
+      <i class="fa fa-2x fa-instagram"></i>
+      <a href="" target="_blank">Follow us!</a>
+    </div>
+    <!-- <div class="fl-fl float-pn">
+      <i class="fa fa-2x fa-pinterest"></i>
+      <a href="" target="_blank">Follow us!</a>
+    </div> -->
+  </div>
+<!-- end of soical media links -->
+
+
+
+  <div class="events">
+    <figure class="snip yellow">
+      <img src="images/drone.jpg" alt="">
+      <figcaption>
+          <h3>SARGAM</h3>
+          <p>
+            Music plays an integral role in the lives of Indians. Indian music is magically enchanted, sophisticated with defined melodies that are soothing to the ear. Participants have to express the cultural heritage of India. It is a platform for healthy competition for all those who are passionate about music.
+          </p>
+      </figcaption>
+      <a href=""></a>
+  </figure>
+  <figure class="snip yellow">
+    <img src="images/drone.jpg" alt="">
+    <figcaption>
+        <h3>BATTLE OF BANDS </h3>
+        <p>
+          Battle of Bands is an event where you face-off against musical acts from across the country in pursuit of who gets to call themselves “The Best Band”. There is a lot at stake here with individual awards, a spectacular audience to perform for and the opportunity to turn up the heat and find out who walks away with the bragging rights. 
+        </p>
+  
+    
+
+        </figcaption>
+    <a href=""></a>
+  </figure>
+  <figure class="snip yellow">
+    <img src="images/drone.jpg" alt="">
+    <figcaption>
+        <h3>DESI BEATZ-INDIAN DANCE</h3>
+        <p>
+          Be it classical or folk, Indian dance forms have never failed to mesmerise us. Dance to express not to impress. Express your feelings via dance on the stage, match your heartbeat to the rhythm and blow the audience away. The better you express the bigger the awards you win.
+        </p>
+
+    </figcaption>
+    <a href=""></a>
+  </figure>
+  <figure class="snip yellow">
+    <img src="images/drone.jpg" alt="">
+    <figcaption>
+        <h3>INTENSITY- WESTERN DANCE </h3>
+        <p>
+            You’ve got the moves and we’ve got the stage. What sets you apart from the others will be your devotion to delivering the best performance. Put on your dancing shoes and come wow us with your moves.  
+        </p>
+    </figcaption>
+    <a href=""></a>
+  </figure>
+  <figure class="snip yellow">
+    <img src="images/drone.jpg" alt="">
+    <figcaption>
+        <h3>SUR-TAAL </h3>
+        <p>
+            The soothing melodies of the sixties, the lilting music of the seventies or the ragas of yesteryear, Indian music unites us across the country. Magnovite Octa presents an opportunity for you to sing your way to victory.
+        </p>
+    </figcaption>
+    <a href=""></a>
+  </figure>
+       
+        <figure class="snip red ">
+           <img src="images/drone.jpg" alt="">
+           <figcaption>
+               <h3>ECHOES </h3>
+               <p>
+                  “You can cage the singer but not the song.” -Harry Belafonte.  
+                  Sing your heart out. Bring new vibes. Choose from folk, hip hop, jazz, pop, rock, country music and much more. Sing to express and to impress.
+                  
+              </p>
+           </figcaption>
+           <a href=""></a>
+       </figure>
+       
+        <figure class="snip blue">
+           <img src="images/drone.jpg" alt="">
+           <figcaption>
+               <h3>UNPLUGGED </h3>
+               <p>
+                  From Mozart to Jimi Hendrix, from the melodious sonatas of classical music to the resonant tones of guitar solos, pure music has always had the power to move hearts and shape emotions. Bring your vibrant energy, a musical instrument and wow us with your brilliant performances!
+              </p>
+           </figcaption>
+           <a href=""></a>
+       </figure>
+
+       <figure class="snip blue">
+          <img src="images/drone.jpg" alt="">
+          <figcaption>
+              <h3>BEAT-BOXING </h3>
+              <p>What’s a song without rhythm? If you think you have what it takes to set the stage on fire with your rhythm and beats, then make the stage your home ground and beat box your way to victory  
+              </p>
+          </figcaption>
+          <a href=""></a>
+      </figure>
+
+
+      <figure class="snip blue">
+          <img src="images/drone.jpg" alt="">
+          <figcaption>
+              <h3>SLAM BLUES</h3>
+              <p>
+                  Slam Blues, invites you to savour your thoughts, express your feelings and bring your beliefs to life with words through the medium of rhyme.  
+                </p>
+          </figcaption>
+          <a href=""></a>
+      </figure>
+      
+      <figure class="snip blue">
+          <img src="images/drone.jpg" alt="">
+          <figcaption>
+              <h3>NUKKAD NATAK </h3>
+              <p>
+                  Street play is an event to bring out your theatrical side. Organized in an open air venue, participants compete to attract the attention of the audience with their acting skills and flair for the dramatic. Have you got what it takes? Then claim the stage and tell your story.
+              </p>
+          </figcaption>
+          <a href=""></a>
+      </figure>
+
+
+      </div>
+      <canvas id="stars">
+      </canvas>
+    
+<br><br><br><br><br><br>
+      <!-- footer -->
+
+       
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-3 footer-column">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <span class="footer-title">Quick Links</span>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tech Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Non-tech Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cultural Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Magnovite team</a>
+                  </li>
+                </ul>
+                
+              </div>
+              <div class="col-md-9 footer-column" > 
+                <div class="page">
+                  <br>
+                  <div id="home-news">
+                    <div class="home_header">
+                       <span>We Welcome</span>
+                       <strong>YOU</strong>
+                    </div>
+                    <div class="home_header">
+                      <strong>GOLD</strong>
+                       <span>Edition</span>
+                      
+                    </div>
+                    <div class="home_header">
+                      <strong>Magnovite</strong>
+                      <span>Octa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!--<div class="text-center"><i class="fas fa-ellipsis-h"></i></div-->
+            
+            <div class="row text-center">
+              <div class="col-md-8 box">
+             <p class="copyright"><center>Copyright &copy;Website by christ(deemed to be university) faculty of engineering<script>document.write(new Date().getFullYear())</script>
+             </center> </p>
+              </div>
+           
+              <div class="col-md-4 box">
+           <ul class="list-inline quick-links">
+                  <li class="list-inline-item">
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">Terms of Use</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+    
+         </footer>
+
+      <!-- end of footer -->
+  
+  
+  
+  <script src='http://requirejs.org/docs/release/2.1.15/minified/require.js'></script>
+<script src='https://rawgit.com/ironwallaby/delaunay/master/delaunay.js'></script>
+
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="pinterest_grid.js"></script> 
+<script src="..//wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="..//wow.min.js"></script>
+
+
+    <script  src="js/c_index.js"></script>
+
+
+
+
+</body>
+
+</html>
